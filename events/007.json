@@ -1,0 +1,44 @@
+{
+    "title": "Kohleausstieg: Notwendig oder wirtschaftlicher Selbstmord?",
+    "headlines": [
+        {
+            "headline": "Kohleausstieg führt zu Massenarbeitslosigkeit! Experten warnen!",
+            "effects": {
+                "leser": 25,
+                "verfassungsschutz": 15,
+                "geld": 20,
+                "werbefreundlichkeit": -10,
+                "sozialisten": -4,
+                "gruene": -7,
+                "konservative": 7,
+                "rechtsextreme": 4
+            }
+        },
+        {
+            "headline": "Kohleausstieg: Die wahre Ursache der Wirtschaftskrise!",
+            "effects": {
+                "leser": 28,
+                "verfassungsschutz": 18,
+                "geld": 25,
+                "werbefreundlichkeit": -12,
+                "sozialisten": -5,
+                "gruene": -8,
+                "konservative": 8,
+                "rechtsextreme": 5
+            }
+        },
+        {
+            "headline": "Kohleausstieg: Ein Todesurteil für die Industrie!",
+            "effects": {
+                "leser": 30,
+                "verfassungsschutz": 20,
+                "geld": 30,
+                "werbefreundlichkeit": -15,
+                "sozialisten": -6,
+                "gruene": -10,
+                "konservative": 10,
+                "rechtsextreme": 6
+            }
+        }
+    ]
+}

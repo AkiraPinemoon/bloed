@@ -1,0 +1,44 @@
+{
+    "title": "Atomkraft: Die unterschätzte Gefahr oder die Rettung?",
+    "headlines": [
+        {
+            "headline": "Atomkraftwerke explodieren bald? Regierung verschweigt die Wahrheit!",
+            "effects": {
+                "leser": 25,
+                "verfassungsschutz": 15,
+                "geld": 20,
+                "werbefreundlichkeit": -10,
+                "sozialisten": -5,
+                "gruene": -10,
+                "konservative": 10,
+                "rechtsextreme": 5
+            }
+        },
+        {
+            "headline": "Atomkraft: Die tickende Zeitbombe in deiner Nachbarschaft!",
+            "effects": {
+                "leser": 30,
+                "verfassungsschutz": 18,
+                "geld": 25,
+                "werbefreundlichkeit": -12,
+                "sozialisten": -6,
+                "gruene": -12,
+                "konservative": 12,
+                "rechtsextreme": 6
+            }
+        },
+        {
+            "headline": "Atomkraft: Die geheime Waffe der Eliten!",
+            "effects": {
+                "leser": 28,
+                "verfassungsschutz": 17,
+                "geld": 22,
+                "werbefreundlichkeit": -11,
+                "sozialisten": -7,
+                "gruene": -14,
+                "konservative": 14,
+                "rechtsextreme": 7
+            }
+        }
+    ]
+}
