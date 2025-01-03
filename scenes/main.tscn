@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://c33bee42rl1a3"]
+
+[ext_resource type="PackedScene" uid="uid://c2rn1lhc8ggf2" path="res://scenes/article_page.tscn" id="1_yhjib"]
+
+[node name="Main" type="Node"]
+
+[node name="GUI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="GUI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+ratio = 0.7
+stretch_mode = 0
+
+[node name="Page" parent="GUI/AspectRatioContainer" instance=ExtResource("1_yhjib")]
+layout_mode = 2
