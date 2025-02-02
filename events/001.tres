@@ -7,22 +7,22 @@
 script = ExtResource("1_i1ggn")
 headline = "Die Luege der gruenen Energie? Oel Firmen berichten ueber die Wahrheit!"
 readers = 10
-advertisability = 10
-politics = 5
+advertisability = 0.1
+politics = 0.05
 
 [sub_resource type="Resource" id="Resource_fhesj"]
 script = ExtResource("1_i1ggn")
 headline = "Globale Institutionen staerken die fake-Energiewende um das Volk zu beeinflussen!"
 readers = 20
-advertisability = -5
-politics = -5
+advertisability = -0.05
+politics = -0.05
 
 [sub_resource type="Resource" id="Resource_alknd"]
 script = ExtResource("1_i1ggn")
 headline = "Windraeder sind krebseregend? Wissenschaftler verschweigen die Folgen!"
 readers = 15
-advertisability = -5
-politics = 6
+advertisability = -0.05
+politics = 0.06
 
 [resource]
 script = ExtResource("1_t6kl1")

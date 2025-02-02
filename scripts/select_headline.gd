@@ -3,8 +3,11 @@ extends Control
 @export var event: EventResource
 
 @onready var title = $Title
+@onready var page_scroll = $PageScrollContainer
 @onready var headline_container = $PageScrollContainer/VBoxContainer
 @onready var button = $Button
+
+signal headline_selected
 
 func _ready():
 	title.text = event.title
@@ -19,4 +22,4 @@ func _ready():
 	button.pressed.connect(select)
 
 func select():
-	queue_free()
+	headline_selected.emit(event.headlines[page_scroll.page])

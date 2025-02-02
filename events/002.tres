@@ -7,22 +7,22 @@
 script = ExtResource("1_0qrhb")
 headline = "Solarpanels verursachen tödliche Strahlung! Experten warnen!"
 readers = 15
-advertisability = -5
-politics = 2
+advertisability = -0.05
+politics = 0.02
 
 [sub_resource type="Resource" id="Resource_hkp01"]
 script = ExtResource("1_0qrhb")
 headline = "Geheime Studien: Solarenergie führt zu massiven Gesundheitsproblemen!"
 readers = 20
-advertisability = -8
-politics = 4
+advertisability = -0.08
+politics = 0.04
 
 [sub_resource type="Resource" id="Resource_fcgbj"]
 script = ExtResource("1_0qrhb")
 headline = "Solarenergie: Die große Lüge der Regierung!"
 readers = 18
-advertisability = -7
-politics = 3
+advertisability = -0.07
+politics = 0.03
 
 [resource]
 script = ExtResource("2_unl5s")
