@@ -1,0 +1,204 @@
+[gd_scene load_steps=11 format=3 uid="uid://dpmjbcladf32s"]
+
+[ext_resource type="Texture2D" uid="uid://dn5qst1320tvl" path="res://assets/newspaper_blank.png" id="1_mlx4t"]
+[ext_resource type="Texture2D" uid="uid://dyb5xsvkerhy" path="res://assets/text_lg.png" id="2_4trot"]
+[ext_resource type="Texture2D" uid="uid://byswm3174cro1" path="res://assets/text_md.png" id="3_dggn8"]
+[ext_resource type="Texture2D" uid="uid://1op2ory4k02o" path="res://assets/text_sm.png" id="4_un4or"]
+[ext_resource type="Texture2D" uid="uid://dh5cru6vkixuk" path="res://assets/newspaper_images/dday.png" id="5_7juxa"]
+[ext_resource type="Texture2D" uid="uid://bfyo66asqsxm0" path="res://assets/newspaper_logos/bloed.png" id="6_voy51"]
+
+[sub_resource type="SystemFont" id="SystemFont_eic42"]
+font_names = PackedStringArray("Times New Roman")
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_0365n"]
+font = SubResource("SystemFont_eic42")
+font_size = 32
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_h5qa4"]
+font = SubResource("SystemFont_eic42")
+font_size = 17
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_dyv3a"]
+font = SubResource("SystemFont_eic42")
+font_size = 20
+font_color = Color(0, 0, 0, 1)
+
+[node name="Page" type="Control"]
+layout_mode = 3
+anchor_right = 0.788333
+anchor_bottom = 0.631
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Newspaper" type="TextureRect" parent="."]
+layout_mode = 2
+anchor_left = 0.0108025
+anchor_top = 0.00694444
+anchor_right = 0.986111
+anchor_bottom = 0.99566
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_mlx4t")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Text LG2" type="TextureRect" parent="."]
+layout_mode = 2
+anchor_left = 0.0429043
+anchor_top = 0.321628
+anchor_right = 0.478548
+anchor_bottom = 0.482733
+offset_left = 6.31353
+offset_top = -0.769043
+offset_right = 6.31354
+offset_bottom = -0.769043
+texture = ExtResource("2_4trot")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Text LG3" type="TextureRect" parent="."]
+layout_mode = 2
+anchor_left = 0.494052
+anchor_top = 0.462392
+anchor_right = 0.929696
+anchor_bottom = 0.623497
+offset_left = 6.31353
+offset_top = -0.769043
+offset_right = 6.31354
+offset_bottom = -0.769043
+texture = ExtResource("2_4trot")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Text MD2" type="TextureRect" parent="."]
+layout_mode = 2
+anchor_left = 0.509901
+anchor_top = 0.311853
+anchor_right = 0.948845
+anchor_bottom = 0.443038
+offset_left = -1.15842
+offset_top = 3.15808
+offset_right = -1.15845
+offset_bottom = 3.15808
+texture = ExtResource("3_dggn8")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Text MD4" type="TextureRect" parent="."]
+layout_mode = 2
+anchor_left = 0.0595316
+anchor_top = 0.481524
+anchor_right = 0.498476
+anchor_bottom = 0.612709
+offset_left = -1.15842
+offset_top = 3.15808
+offset_right = -1.15845
+offset_bottom = 3.15808
+texture = ExtResource("3_dggn8")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Text MD3" type="TextureRect" parent="."]
+layout_mode = 2
+anchor_left = 0.509901
+anchor_top = 0.720368
+anchor_right = 0.948845
+anchor_bottom = 0.851553
+offset_left = -1.15842
+offset_top = -1.09235
+offset_right = -1.15845
+offset_bottom = -1.09235
+texture = ExtResource("3_dggn8")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Text SM2" type="TextureRect" parent="."]
+layout_mode = 2
+anchor_left = 0.520782
+anchor_top = 0.633477
+anchor_right = 0.933323
+anchor_bottom = 0.711728
+offset_left = -1.50165
+offset_top = -0.254211
+offset_right = -1.50165
+offset_bottom = -0.254211
+texture = ExtResource("4_un4or")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Image" type="TextureRect" parent="."]
+layout_mode = 2
+anchor_left = 0.0706047
+anchor_top = 0.629621
+anchor_right = 0.482867
+anchor_bottom = 0.840397
+offset_left = -1.39603
+offset_top = 1.70935
+offset_right = -1.39606
+offset_bottom = 1.70935
+texture = ExtResource("5_7juxa")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Headline" type="Label" parent="."]
+layout_mode = 2
+anchor_left = 0.0514133
+anchor_top = 0.11347
+anchor_right = 0.937552
+anchor_bottom = 0.294136
+offset_left = 6.07591
+offset_top = 5.07378
+offset_right = 6.07587
+offset_bottom = 5.07376
+text = "Die Lüge der grünen Energie? Öl Firmen berichten über die Wahrheit!"
+label_settings = SubResource("LabelSettings_0365n")
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="Logo" type="TextureRect" parent="."]
+layout_mode = 2
+anchor_left = 0.0544554
+anchor_top = 0.023015
+anchor_right = 0.151815
+anchor_bottom = 0.0909091
+offset_left = 6.12872
+offset_top = 6.16332
+offset_right = 6.12872
+offset_bottom = 6.16331
+texture = ExtResource("6_voy51")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Edition" type="Label" parent="."]
+layout_mode = 2
+anchor_left = 0.830292
+anchor_top = 0.0112048
+anchor_right = 0.974055
+anchor_bottom = 0.0434257
+offset_left = -6.38611
+offset_top = 6.18726
+offset_right = -6.38611
+offset_bottom = 6.18726
+text = "Woche 01"
+label_settings = SubResource("LabelSettings_h5qa4")
+horizontal_alignment = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Tagline" type="Label" parent="."]
+layout_mode = 2
+anchor_left = 0.168317
+anchor_top = 0.0182606
+anchor_right = 0.572607
+anchor_bottom = 0.0547107
+offset_left = 4.30693
+offset_top = 6.16332
+offset_right = 4.30692
+offset_bottom = 6.16332
+text = "Nichts als die Wahrheit"
+label_settings = SubResource("LabelSettings_dyv3a")
+metadata/_edit_use_anchors_ = true

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://u4m0mvstfgrx"]
+
+[ext_resource type="Script" path="res://scripts/page_builder.gd" id="1_ifse4"]
+[ext_resource type="PackedScene" uid="uid://cpuxvu6xuiqbl" path="res://scenes/page_presets/believe.tscn" id="1_kwydx"]
+
+[node name="PageBuilder" type="AspectRatioContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+ratio = 0.7
+script = ExtResource("1_ifse4")
+
+[node name="Page" parent="." instance=ExtResource("1_kwydx")]
+layout_mode = 2

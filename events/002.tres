@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="EventResource" load_steps=6 format=3 uid="uid://15sbp8ynvmqj"]
+
+[ext_resource type="Script" path="res://scripts/resources/headline.gd" id="1_0qrhb"]
+[ext_resource type="Script" path="res://scripts/resources/event.gd" id="2_unl5s"]
+
+[sub_resource type="Resource" id="Resource_jaluy"]
+script = ExtResource("1_0qrhb")
+headline = "Solarpanels verursachen tödliche Strahlung! Experten warnen!"
+readers = 15
+advertisability = -5
+politics = 2
+
+[sub_resource type="Resource" id="Resource_hkp01"]
+script = ExtResource("1_0qrhb")
+headline = "Geheime Studien: Solarenergie führt zu massiven Gesundheitsproblemen!"
+readers = 20
+advertisability = -8
+politics = 4
+
+[sub_resource type="Resource" id="Resource_fcgbj"]
+script = ExtResource("1_0qrhb")
+headline = "Solarenergie: Die große Lüge der Regierung!"
+readers = 18
+advertisability = -7
+politics = 3
+
+[resource]
+script = ExtResource("2_unl5s")
+title = "Solarenergie: Ein teurer Irrweg oder die Zukunft?"
+headlines = Array[ExtResource("1_0qrhb")]([SubResource("Resource_jaluy"), SubResource("Resource_hkp01"), SubResource("Resource_fcgbj")])

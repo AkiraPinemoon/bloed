@@ -1,8 +1,25 @@
-[gd_scene load_steps=2 format=3 uid="uid://c33bee42rl1a3"]
+[gd_scene load_steps=9 format=3 uid="uid://r3o7o53s7obm"]
 
-[ext_resource type="PackedScene" uid="uid://c2rn1lhc8ggf2" path="res://scenes/article_page.tscn" id="1_yhjib"]
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_i0li1"]
+[ext_resource type="Texture2D" uid="uid://b6flxxwp48nxw" path="res://assets/background.jpg" id="4_hr5ou"]
+[ext_resource type="Texture2D" uid="uid://gl4c7d2o2s1e" path="res://assets/icons/money.png" id="5_sov1c"]
+[ext_resource type="Texture2D" uid="uid://frbb3cwotxs1" path="res://assets/icons/readers.png" id="6_pyqyo"]
+[ext_resource type="Texture2D" uid="uid://ca6vs3p62dfel" path="res://assets/icons/advertisability.png" id="7_jx8vx"]
+[ext_resource type="Texture2D" uid="uid://chrjgm3w017v2" path="res://assets/icons/politics.png" id="8_7ma4l"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pgtpj"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 100
+corner_radius_top_right = 100
+corner_radius_bottom_right = 100
+corner_radius_bottom_left = 100
+
+[sub_resource type="LabelSettings" id="LabelSettings_fyxo6"]
+font_size = 26
+font_color = Color(0, 0, 0, 1)
 
 [node name="Main" type="Node"]
+script = ExtResource("1_i0li1")
 
 [node name="GUI" type="Control" parent="."]
 layout_mode = 3
@@ -11,16 +28,211 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 1
 
-[node name="AspectRatioContainer" type="AspectRatioContainer" parent="GUI"]
+[node name="Background" type="TextureRect" parent="GUI"]
+modulate = Color(0.419813, 0.419813, 0.419813, 1)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -466.0
+offset_right = 465.0
+offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-ratio = 0.7
-stretch_mode = 0
+texture = ExtResource("4_hr5ou")
+expand_mode = 2
+stretch_mode = 6
 
-[node name="Page" parent="GUI/AspectRatioContainer" instance=ExtResource("1_yhjib")]
-layout_mode = 2
+[node name="Panel" type="Panel" parent="GUI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.03
+anchor_top = 0.016
+anchor_right = 0.03
+anchor_bottom = 0.056
+offset_right = 106.0
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_pgtpj")
+
+[node name="Money" type="Label" parent="GUI/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.244567
+anchor_top = -0.126844
+anchor_right = 0.94268
+anchor_bottom = 0.873156
+offset_left = 6.07591
+offset_top = 5.07378
+offset_right = 6.07587
+offset_bottom = 5.07376
+text = "129"
+label_settings = SubResource("LabelSettings_fyxo6")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="GUI/Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.189
+anchor_top = -0.425
+anchor_right = 0.189
+anchor_bottom = 1.45
+offset_left = -28.034
+offset_right = 27.966
+grow_vertical = 2
+texture = ExtResource("5_sov1c")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel2" type="Panel" parent="GUI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.03
+anchor_top = 0.016
+anchor_right = 0.03
+anchor_bottom = 0.056
+offset_left = 123.0
+offset_right = 229.0
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_pgtpj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Money" type="Label" parent="GUI/Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.244567
+anchor_top = -0.126844
+anchor_right = 0.94268
+anchor_bottom = 0.873156
+offset_left = 6.07591
+offset_top = 5.07378
+offset_right = 6.07587
+offset_bottom = 5.07376
+text = "129"
+label_settings = SubResource("LabelSettings_fyxo6")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="GUI/Panel2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.189
+anchor_top = -0.425
+anchor_right = 0.189
+anchor_bottom = 1.45
+offset_left = -28.034
+offset_right = 27.966
+grow_vertical = 2
+texture = ExtResource("6_pyqyo")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel3" type="Panel" parent="GUI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.03
+anchor_top = 0.016
+anchor_right = 0.03
+anchor_bottom = 0.056
+offset_left = 248.0
+offset_right = 354.0
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_pgtpj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Money" type="Label" parent="GUI/Panel3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.244567
+anchor_top = -0.126844
+anchor_right = 0.94268
+anchor_bottom = 0.873156
+offset_left = 6.07591
+offset_top = 5.07378
+offset_right = 6.07587
+offset_bottom = 5.07376
+text = "129"
+label_settings = SubResource("LabelSettings_fyxo6")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="GUI/Panel3"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.189
+anchor_top = -0.425
+anchor_right = 0.189
+anchor_bottom = 1.45
+offset_left = -28.034
+offset_right = 27.966
+grow_vertical = 2
+texture = ExtResource("7_jx8vx")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel4" type="Panel" parent="GUI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.03
+anchor_top = 0.016
+anchor_right = 0.03
+anchor_bottom = 0.056
+offset_left = 370.0
+offset_right = 476.0
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_pgtpj")
+
+[node name="Politics" type="Label" parent="GUI/Panel4"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.244567
+anchor_top = -0.126844
+anchor_right = 0.94268
+anchor_bottom = 0.873156
+offset_left = 6.07591
+offset_top = 5.07378
+offset_right = 6.07587
+offset_bottom = 5.07376
+text = "129"
+label_settings = SubResource("LabelSettings_fyxo6")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="GUI/Panel4"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.189
+anchor_top = -0.425
+anchor_right = 0.189
+anchor_bottom = 1.45
+offset_left = -28.034
+offset_right = 27.966
+grow_vertical = 2
+texture = ExtResource("8_7ma4l")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="DebugButton" type="Button" parent="GUI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.851667
+anchor_right = 1.0
+anchor_bottom = 0.084
+grow_horizontal = 2
+grow_vertical = 2
+text = "Next"
+metadata/_edit_use_anchors_ = true

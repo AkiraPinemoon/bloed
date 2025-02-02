@@ -1,11 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://c2rn1lhc8ggf2"]
+[gd_scene load_steps=11 format=3 uid="uid://omj5ju1t3a8n"]
 
-[ext_resource type="Texture2D" uid="uid://dn5qst1320tvl" path="res://assets/newspaper_blank.png" id="1_oa7dq"]
-[ext_resource type="Texture2D" uid="uid://dyb5xsvkerhy" path="res://assets/text_lg.png" id="2_pviyh"]
-[ext_resource type="Texture2D" uid="uid://byswm3174cro1" path="res://assets/text_md.png" id="3_87fl7"]
-[ext_resource type="Texture2D" uid="uid://1op2ory4k02o" path="res://assets/text_sm.png" id="4_yy4je"]
-[ext_resource type="Texture2D" uid="uid://c7fhph7yhxk7l" path="res://assets/newspaper_images/stonks.png" id="5_ap7d8"]
-[ext_resource type="Texture2D" uid="uid://bfyo66asqsxm0" path="res://assets/newspaper_logos/bloed.png" id="6_1hm1v"]
+[ext_resource type="Texture2D" uid="uid://dn5qst1320tvl" path="res://assets/newspaper_blank.png" id="1_50shk"]
+[ext_resource type="Texture2D" uid="uid://dyb5xsvkerhy" path="res://assets/text_lg.png" id="2_q2q8n"]
+[ext_resource type="Texture2D" uid="uid://byswm3174cro1" path="res://assets/text_md.png" id="3_ka2hd"]
+[ext_resource type="Texture2D" uid="uid://1op2ory4k02o" path="res://assets/text_sm.png" id="4_0fqf5"]
+[ext_resource type="Texture2D" uid="uid://c7fhph7yhxk7l" path="res://assets/newspaper_images/stonks.png" id="5_yfo1k"]
+[ext_resource type="Texture2D" uid="uid://bfyo66asqsxm0" path="res://assets/newspaper_logos/bloed.png" id="6_3gm74"]
 
 [sub_resource type="SystemFont" id="SystemFont_eic42"]
 font_names = PackedStringArray("Times New Roman")
@@ -13,7 +13,7 @@ subpixel_positioning = 0
 
 [sub_resource type="LabelSettings" id="LabelSettings_0365n"]
 font = SubResource("SystemFont_eic42")
-font_size = 40
+font_size = 32
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_h5qa4"]
@@ -23,15 +23,16 @@ font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_dyv3a"]
 font = SubResource("SystemFont_eic42")
-font_size = 22
+font_size = 20
 font_color = Color(0, 0, 0, 1)
 
 [node name="Page" type="Control"]
 layout_mode = 3
-anchor_right = 1.0
-anchor_bottom = 0.800347
+anchor_right = 0.788333
+anchor_bottom = 0.631
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Newspaper" type="TextureRect" parent="."]
@@ -42,7 +43,7 @@ anchor_right = 0.986111
 anchor_bottom = 0.99566
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_oa7dq")
+texture = ExtResource("1_50shk")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -56,7 +57,7 @@ offset_left = 6.31353
 offset_top = 3.15808
 offset_right = 6.31354
 offset_bottom = 3.15808
-texture = ExtResource("2_pviyh")
+texture = ExtResource("2_q2q8n")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -70,7 +71,7 @@ offset_left = 6.31353
 offset_top = -0.769043
 offset_right = 6.31354
 offset_bottom = -0.769043
-texture = ExtResource("2_pviyh")
+texture = ExtResource("2_q2q8n")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -84,7 +85,7 @@ offset_left = 6.28713
 offset_top = 0.667725
 offset_right = 6.28714
 offset_bottom = 0.667664
-texture = ExtResource("3_87fl7")
+texture = ExtResource("3_ka2hd")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -98,7 +99,7 @@ offset_left = -1.15842
 offset_top = 3.15808
 offset_right = -1.15845
 offset_bottom = 3.15808
-texture = ExtResource("3_87fl7")
+texture = ExtResource("3_ka2hd")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -112,7 +113,7 @@ offset_left = -1.15842
 offset_top = -1.09235
 offset_right = -1.15845
 offset_bottom = -1.09235
-texture = ExtResource("3_87fl7")
+texture = ExtResource("3_ka2hd")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -126,7 +127,7 @@ offset_left = 6.23432
 offset_top = 1.50583
 offset_right = 6.23431
 offset_bottom = 1.50583
-texture = ExtResource("4_yy4je")
+texture = ExtResource("4_0fqf5")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -140,7 +141,7 @@ offset_left = -1.50165
 offset_top = -0.254211
 offset_right = -1.50165
 offset_bottom = -0.254211
-texture = ExtResource("4_yy4je")
+texture = ExtResource("4_0fqf5")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -154,16 +155,16 @@ offset_left = -1.39603
 offset_top = 1.70935
 offset_right = -1.39606
 offset_bottom = 1.70935
-texture = ExtResource("5_ap7d8")
+texture = ExtResource("5_yfo1k")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Headline" type="Label" parent="."]
 layout_mode = 2
-anchor_left = 0.0577558
-anchor_top = 0.127733
-anchor_right = 0.943894
-anchor_bottom = 0.289988
+anchor_left = 0.0514133
+anchor_top = 0.11347
+anchor_right = 0.937552
+anchor_bottom = 0.294136
 offset_left = 6.07591
 offset_top = 5.07378
 offset_right = 6.07587
@@ -183,16 +184,16 @@ offset_left = 6.12872
 offset_top = 6.16332
 offset_right = 6.12872
 offset_bottom = 6.16331
-texture = ExtResource("6_1hm1v")
+texture = ExtResource("6_3gm74")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="Edition" type="Label" parent="."]
 layout_mode = 2
-anchor_left = 0.836634
-anchor_top = 0.0207135
-anchor_right = 0.965347
-anchor_bottom = 0.0529344
+anchor_left = 0.830292
+anchor_top = 0.0112048
+anchor_right = 0.974055
+anchor_bottom = 0.0434257
 offset_left = -6.38611
 offset_top = 6.18726
 offset_right = -6.38611
@@ -205,9 +206,9 @@ metadata/_edit_use_anchors_ = true
 [node name="Tagline" type="Label" parent="."]
 layout_mode = 2
 anchor_left = 0.168317
-anchor_top = 0.023015
+anchor_top = 0.0182606
 anchor_right = 0.572607
-anchor_bottom = 0.0552359
+anchor_bottom = 0.0547107
 offset_left = 4.30693
 offset_top = 6.16332
 offset_right = 4.30692

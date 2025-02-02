@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="EventResource" load_steps=6 format=3 uid="uid://x0vwnqbddkc1"]
+
+[ext_resource type="Script" path="res://scripts/resources/headline.gd" id="1_3gto0"]
+[ext_resource type="Script" path="res://scripts/resources/event.gd" id="2_blpo5"]
+
+[sub_resource type="Resource" id="Resource_2lnqd"]
+script = ExtResource("1_3gto0")
+headline = "Atomkraftwerke explodieren bald? Regierung verschweigt die Wahrheit!"
+readers = 25
+advertisability = -10
+politics = 15
+
+[sub_resource type="Resource" id="Resource_uacdn"]
+script = ExtResource("1_3gto0")
+headline = "Atomkraft: Die tickende Zeitbombe in deiner Nachbarschaft!"
+readers = 30
+advertisability = -12
+politics = 18
+
+[sub_resource type="Resource" id="Resource_eg0wc"]
+script = ExtResource("1_3gto0")
+headline = "Atomkraft: Die geheime Waffe der Eliten!"
+readers = 28
+advertisability = -11
+politics = 21
+
+[resource]
+script = ExtResource("2_blpo5")
+title = "Atomkraft: Die unterschätzte Gefahr oder die Rettung?"
+headlines = Array[ExtResource("1_3gto0")]([SubResource("Resource_2lnqd"), SubResource("Resource_uacdn"), SubResource("Resource_eg0wc")])

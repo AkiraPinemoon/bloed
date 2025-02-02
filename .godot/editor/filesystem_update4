@@ -1,1 +1,16 @@
+res://scenes/select_headline.tscn
 res://scenes/main.tscn
+res://scripts/main.gd
+res://scripts/event.gd
+res://events/001.tres
+res://scripts/resources/headline.gd
+res://scripts/resources/event.gd
+res://events/002.tres
+res://events/003.tres
+res://scripts/select_headline.gd
+res://scenes/page_builder.tscn
+res://scripts/page_builder.gd
+res://scripts/page_scroll_container.gd
+res://scenes/page_presets/believe.tscn
+res://scenes/page_presets/dday.tscn
+res://scenes/page_presets/stonks.tscn

@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="EventResource" load_steps=6 format=3 uid="uid://dhfg86fbju4ni"]
+
+[ext_resource type="Script" path="res://scripts/resources/headline.gd" id="1_i1ggn"]
+[ext_resource type="Script" path="res://scripts/resources/event.gd" id="1_t6kl1"]
+
+[sub_resource type="Resource" id="Resource_m0a26"]
+script = ExtResource("1_i1ggn")
+headline = "Die Luege der gruenen Energie? Oel Firmen berichten ueber die Wahrheit!"
+readers = 10
+advertisability = 10
+politics = 5
+
+[sub_resource type="Resource" id="Resource_fhesj"]
+script = ExtResource("1_i1ggn")
+headline = "Globale Institutionen staerken die fake-Energiewende um das Volk zu beeinflussen!"
+readers = 20
+advertisability = -5
+politics = -5
+
+[sub_resource type="Resource" id="Resource_alknd"]
+script = ExtResource("1_i1ggn")
+headline = "Windraeder sind krebseregend? Wissenschaftler verschweigen die Folgen!"
+readers = 15
+advertisability = -5
+politics = 6
+
+[resource]
+script = ExtResource("1_t6kl1")
+title = "Eine bekannter Wissenschaftler praesentiert einen Durchbruch im Feld der erneuerbaren Energien"
+headlines = Array[ExtResource("1_i1ggn")]([SubResource("Resource_m0a26"), SubResource("Resource_fhesj"), SubResource("Resource_alknd")])
